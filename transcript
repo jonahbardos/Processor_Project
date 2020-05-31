@@ -1,0 +1,120 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+do runrtl.do
+# 
+# Get rid of current work lib
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# Create work library and map it to 'work'
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# Compile Verilog
+#     All Verilog files that are part of this design should have
+#     their own "vlog" line below.
+# vlog -work work +acc "./testMemory.sv"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:12:38 on May 31,2020
+# vlog -reportprogress 300 -work work "+acc" ./testMemory.sv 
+# -- Compiling module testMemory
+# -- Compiling module testMemory_tb
+# 
+# Top level modules:
+# 	testMemory_tb
+# End time: 14:12:39 on May 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -work work +acc "./myAlteraROM.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:12:39 on May 31,2020
+# vlog -reportprogress 300 -work work "+acc" ./myAlteraROM.v 
+# -- Compiling module myAlteraROM
+# 
+# Top level modules:
+# 	myAlteraROM
+# End time: 14:12:39 on May 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Call vsim to invoke simulator
+#     Make sure the last item on the line is the name of the
+#     testbench module you want to execute.
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" -fsmdebug  testMemory_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" -fsmdebug testMemory_tb 
+# Start time: 14:12:41 on May 31,2020
+# Loading sv_std.std
+# Loading work.testMemory_tb
+# Loading work.testMemory
+# Loading work.myAlteraROM
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# WARNING: No extended dataflow license exists
+# 
+# Source the wave do file
+#     This should be the file that sets up the signal window for
+#     the module you are testing.
+# do wave.do
+# 
+# Set the window types
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# 
+# Run the simulation
+# run -all
+#                    0    0      0
+#                   10    1      0
+#                   30    2      0
+#                   50    3      0
+#                   70    4      0
+#                   90    5      0
+#                  110    6      0
+#                  130    7      0
+#                  150    8      0
+#                  170    9      0
+#                  190   10      0
+#                  210    0      0
+#                  430    1      0
+# ** Error: Assertion error.
+#    Time: 450 ns  Scope: testMemory_tb File: ./testMemory.sv Line: 60
+# Done!
+#                  450    2      0
+#                  470    3      0
+#                  490    4      0
+#                  510    5      0
+#                  530    6      0
+#                  550    7      0
+#                  570    8      0
+#                  590    9      0
+#                  610   10      0
+#                  630   11      0
+#                  650   12      0
+#                  670   13      0
+#                  690   14      0
+#                  710   15      0
+#                  730   16      0
+#                  750   17      0
+#                  770   18      0
+#                  790   19      0
+#                  810   20      0
+#                  830   21      0
+# ** Note: $stop    : ./testMemory.sv(63)
+#    Time: 850 ns  Iteration: 0  Instance: /testMemory_tb
+# Break in Module testMemory_tb at ./testMemory.sv line 63
+# 
+# View the entire wave display
+# wave zoomfull
+# 0 ps
+# 892500 ps
+# 
+# End
+# End time: 14:13:09 on May 31,2020, Elapsed time: 0:00:28
+# Errors: 1, Warnings: 1

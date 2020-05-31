@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jonah/OneDrive/Desktop/ProjectB
+vmyAlteraROM
+Z1 !s110 1590959559
+!i10b 1
+!s100 WfIMP2TOT?JYWB@2heRZZ2
+I>EZ3>ZTHoB3i=VWk:^eio1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1590958824
+8./myAlteraROM.v
+F./myAlteraROM.v
+L0 40
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1590959559.000000
+!s107 ./myAlteraROM.v|
+!s90 -reportprogress|300|-work|work|+acc|./myAlteraROM.v|
+!i113 1
+Z4 o-work work +acc
+Z5 tCvgOpt 0
+nmy@altera@r@o@m
+vtestMemory
+Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 3GNPo203Ndj>ikW;E1:@i2
+ILB2iITgG6i@4IYm<DdVU^0
+R2
+Z7 !s105 testMemory_sv_unit
+S1
+R0
+Z8 w1590959532
+Z9 8./testMemory.sv
+Z10 F./testMemory.sv
+L0 5
+R3
+r1
+!s85 0
+31
+Z11 !s108 1590959558.000000
+Z12 !s107 ./testMemory.sv|
+Z13 !s90 -reportprogress|300|-work|work|+acc|./testMemory.sv|
+!i113 1
+R4
+R5
+ntest@memory
+vtestMemory_tb
+R6
+R1
+!i10b 1
+!s100 KM[e77VDb_b>`ooHkmMQH2
+IjOe;72Zbi]b?DMoeWMIfK3
+R2
+R7
+S1
+R0
+R8
+R9
+R10
+L0 34
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R4
+R5
+ntest@memory_tb
